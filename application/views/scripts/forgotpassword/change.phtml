@@ -1,0 +1,12 @@
+<?php 
+// First, set the action on the form
+if ($this->form)
+{
+	echo "<p>Enter your new password.</p>";
+	$this->form->setAction($this->url(array('action' => 'change')));
+	echo $this->form;
+}
+else
+{
+	echo "Your password was changed!";
+}	

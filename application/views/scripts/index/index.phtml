@@ -1,0 +1,33 @@
+
+		Detager is simple social bookmarking desktop application, that allows you to: 
+		<ul>
+			<li>Store your bookmarks on the server</li>
+			<li>Tag and categorize stored bookmarks</li>
+			<li>See what others are bookmarking</li>
+			<li>Share your bookmarks on Twitter and Facebook</li>
+		</ul>
+			<hr class="space" />
+			
+		<div class="span-12 last">
+		
+			<script type="text/javascript" src="<?php echo $this->baseUrl('badge/swfobject.js'); ?>"></script>
+			<center>
+				<div id="flashcontent" style="width:215px; height:180px;">
+					<strong>Please upgrade your Flash Player</strong>
+				</div>
+			</center>
+			<script type="text/javascript">
+				// <![CDATA[
+				// version 9.0.115 or greater is required for launching AIR apps.
+				var so = new SWFObject("<?php echo $this->baseUrl('badge/AIRInstallBadge.swf'); ?>", "", "215", "180", "9.0.115", "#000000");
+				so.addVariable("airversion", "2.0");
+				so.addVariable("appname", "Detager%20Desktop");
+				so.addVariable("appurl", "Detager.air");
+				so.addVariable("image", "<?php echo $this->baseUrl('badge/badge-blue.png'); ?>");
+				so.addVariable("appid", "com.detager.DetagerDesktop");
+				so.addVariable("appversion", "0.1");
+				so.write("flashcontent");
+				// ]]>
+			</script>
+
+		</div>

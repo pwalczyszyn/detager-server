@@ -1,0 +1,44 @@
+<?php echo $this->doctype() ?> <!-- This Line will output the doctype we set inside the bootstrap file -->
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>  
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	  <title>detager.com - simple social bookmarking desktop application</title>
+	  <!--
+	      The line below demonstrates usage of the headLink() view helper
+	      @see http://framework.zend.com/manual/en/zend.view.helpers.html
+	      -->
+	  <link REL="SHORTCUT ICON" HREF="<?php echo $this->baseUrl('images/icon-16.png'); ?>">
+	  
+	  <link rel="stylesheet" href="<?php echo $this->baseUrl('css/blueprint/screen.css'); ?>" type="text/css" media="screen, projection" />
+	  <link rel="stylesheet" href="<?php echo $this->baseUrl('css/blueprint/print.css'); ?>" type="text/css" media="print" /> 
+	  <!--[if lt IE 8]>
+	    <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
+	  <![endif]-->
+	  
+	  <link href="<?php echo $this->baseUrl('css/global.css'); ?>" media="screen" rel="stylesheet" type="text/css" />
+	  <link rel="stylesheet" href="<?php echo $this->baseUrl('css/blueprint/plugins/fancy-type/screen.css'); ?>" type="text/css" media="screen, projection" />
+	  
+	</head> 
+	<body>
+		<div class="container">
+			
+			<hr class="space" />
+			<div class="span-24 last">
+				<a href="<?php echo $this->baseUrl('/'); ?>">
+					<img src="<?php echo $this->baseUrl('images/logotype.png'); ?>" />
+				</a>
+			</div>
+						
+			<hr class="space" />
+			
+			<div class="span-12">
+				<hr class="space" />
+				<?php echo $this->layout()->content; ?>
+			</div>
+			<div class="span-12 last">
+				<img src="<?php echo $this->baseUrl('images/screenshot.png'); ?>" />
+			</div>
+			
+		</div>
+	</body>
+</html>
