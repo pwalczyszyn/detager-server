@@ -35,7 +35,6 @@
 	</head> 
 	<body>
 		<div class="container">
-			
 			<hr class="space" />
 			<div class="prepend-1 span-23 last">
 				<a href="<?php echo $this->baseUrl('/'); ?>">
@@ -43,16 +42,23 @@
 				</a>
 			</div>
 						
-			<hr class="space" />
-			
 			<div class="span-13 prepend-1">
 				<hr class="space" />
 				<?php echo $this->layout()->content; ?>
 			</div>
+			
 			<div class="span-10 last">
 				<img src="<?php echo $this->baseUrl('images/screenshot.png'); ?>" />
 			</div>
-			
+
+			<div class="span-24 last">
+				<p align="center">
+				built by Piotr Walczyszyn (<a href="http://riaspace.com" target="_blank">riaspace.com</a>), 
+				contact me through <a href="http://www.riaspace.com/contact-me/" target="_blank">blog</a>, 
+				<a href="http://twitter.com/pwalczyszyn" target="_blank">twitter</a>
+				or <a href="http://www.facebook.com/piotr.walczyszyn" target="_blank">facebook</a>.
+				</p>
+			</div>			
 		</div>
 	</body>
 </html>
