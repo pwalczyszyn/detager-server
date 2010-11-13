@@ -124,6 +124,25 @@ class BookmarksService extends AbstractService
 		}
 	}
 	
+	public function loadUserBookmarks()
+	{
+		$loggedInUserId = $this->getIdentityId();
+		
+		if ($loggedInUserId != null)
+		{			
+			$select = $this->createBookmarksSelectStatement();
+
+    		// Setting public or owner condition
+			$select->where("bmk.user_id = ?", $loggedInUserId);
+			
+			$result = new Zend_Amf_Value_Messaging_ArrayCollection();
+			$result->source = $this->createBookmarksResultArray($select);
+			
+			return $result;
+		}
+		return null;
+	}
+	
 	public function loadLatest($since)
 	{
 		$loggedInUserId = $this->getIdentityId();
