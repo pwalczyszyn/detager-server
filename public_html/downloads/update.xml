@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
+    <version>1.0 beta</version>
+	<url>http://detager.com/downloads/Detager.air</url>
+    <description>
+        <![CDATA[
+        * This is first public release of Detager application
+        ]]>
+    </description>
+</update>
