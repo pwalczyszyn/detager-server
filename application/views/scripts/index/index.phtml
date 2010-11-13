@@ -1,14 +1,13 @@
-
-		Detager is simple social bookmarking desktop application, that allows you to: 
-		<ul>
-			<li>Store your bookmarks on the server</li>
-			<li>Tag and categorize stored bookmarks</li>
-			<li>See what others are bookmarking</li>
-			<li>Share your bookmarks on Twitter and Facebook</li>
-		</ul>
-			<hr class="space" />
-			
-		<div class="span-12 last">
+		
+		<div>Detager is a simple social bookmarking desktop application. 
+		It was created to help discover, bookmark and to categorize cool examples of RIAs (Rich Internet Applications) in the wild. 
+		The client application runs on <a href="http://www.adobe.com/products/air/" target="_blank">Adobe AIR</a> runtime and it was 
+		built with <a href="http://www.adobe.com/products/flex/" target="_blank">Flex Framework</a>, the server side logic is powered by 
+		<a href="http://framework.zend.com/" target="_blank">Zend Framework</a>. Detager source code is completely open and available to download from 
+		github: <a href="https://github.com/pwalczyszyn/detager-desktop" target="_blank">detager-desktop</a> and <a href="https://github.com/pwalczyszyn/detager-server" target="_blank">detager-server</a>.</div>
+		
+		<hr class="space" />
+		<div>
 		
 			<script type="text/javascript" src="<?php echo $this->baseUrl('badge/swfobject.js'); ?>"></script>
 			<center>
@@ -22,12 +21,32 @@
 				var so = new SWFObject("<?php echo $this->baseUrl('badge/AIRInstallBadge.swf'); ?>", "", "215", "180", "9.0.115", "#000000");
 				so.addVariable("airversion", "2.0");
 				so.addVariable("appname", "Detager%20Desktop");
-				so.addVariable("appurl", "Detager.air");
-				so.addVariable("image", "<?php echo $this->baseUrl('badge/badge-blue.png'); ?>");
+				so.addVariable("appurl", "<?php echo $this->baseUrl('downloads/Detager.air'); ?>");
+//				so.addVariable("image", "<?php echo $this->baseUrl('badge/badge.png'); ?>");
 				so.addVariable("appid", "com.detager.DetagerDesktop");
-				so.addVariable("appversion", "0.1");
+				so.addVariable("appversion", "1.0 beta");
 				so.write("flashcontent");
 				// ]]>
 			</script>
 
 		</div>
+
+		<hr class="space" />
+		<div>
+			<b>Things you can do with it now:</b>
+			<ul>
+				<li>Store your bookmarks on the server</li>
+				<li>Tag and categorize stored bookmarks</li>
+				<li>See what others are bookmarking</li>
+				<li>Find interesting bookmarks</li>
+			</ul>
+		</div>
+		<div>
+			<b>Things to come:</b>
+			<ul>
+				<li>Sharing bookmarks on Twitter and Facebook</li>
+				<li>AIR Mobile client for Android phones/tablets</li>
+				<li>Importing bookmarks from most popular browsers</li>
+			</ul>
+		</div>
+		<hr class="space" />

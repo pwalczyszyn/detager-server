@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-body {font-size:95%;color:#fff;background:#2D3034;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+body {font-size:95%;color:#1c232e;background:#ebebeb;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
 
 input[type="text"], input[type="password"], input.text, input.title, textarea, select 
 {
