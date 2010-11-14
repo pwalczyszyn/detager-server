@@ -4,9 +4,8 @@ require_once APPLICATION_PATH . '/services/AbstractService.php';
 class UsersService extends AbstractService
 { 
 	
-	public function login()
+	public function signIn()
 	{	
-		
 		error_log(var_export('login', true), 0);
 		
 		$result = new Default_Dto_SignInResult();
@@ -26,4 +25,10 @@ class UsersService extends AbstractService
 		return $result;
 	}
 
+	public function signOut()
+	{
+		$auth = Zend_Auth::getInstance();
+		$auth->clearIdentity();
+		session_destroy();
+	}
 }

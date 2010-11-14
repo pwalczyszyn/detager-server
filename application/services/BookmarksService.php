@@ -156,7 +156,7 @@ class BookmarksService extends AbstractService
     			$select->where("bmk.entry_date >= ?", $since->toString(Zend_Registry::get('SQL_DATE')));
     		// Setting public or owner condition
 			$select->where("bmk.public_access IS TRUE OR bmk.user_id = ?", $loggedInUserId);
-			
+
 			$result = new Zend_Amf_Value_Messaging_ArrayCollection();
 			$result->source = $this->createBookmarksResultArray($select);
 			
