@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <update xmlns="http://ns.adobe.com/air/framework/update/description/1.0">
-    <version>1.0 RC1</version>
+    <version>1.0 RC2</version>
 	<url>http://detager.com/downloads/Detager.air</url>
     <description>
         <![CDATA[
-        * Fixed signOut issue
-        * Added drag in overlay window
+        * Fixed loading AppData from the server
         ]]>
     </description>
 </update>
