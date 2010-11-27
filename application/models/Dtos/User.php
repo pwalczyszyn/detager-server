@@ -16,5 +16,4 @@ class Default_Dto_User
 	public $description;
 	
 	public $website;
-	
 }

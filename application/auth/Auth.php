@@ -10,8 +10,6 @@ class Auth extends Zend_Amf_Auth_Abstract
 
 	public function authenticate() 
 	{
-		error_log(var_export('Authenticating: ' . $this->_username, true), 0);
-				
 		$userTable = new Default_Dao_User();
 		$stmt = $userTable->select()
 			->where("username = ?", $this->_username)
@@ -19,8 +17,6 @@ class Auth extends Zend_Amf_Auth_Abstract
 			->where("valid is true");
 		$row = $userTable->fetchRow($stmt);
 
-		error_log(var_export('fetchRow: ' . $this->_username, true), 0);
-		
 		if ($row != null)
 		{
 			$user = new Default_Dto_User();

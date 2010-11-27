@@ -22,6 +22,10 @@
           <actionMethod actionName="confirm"/>
           <actionMethod actionName="change"/>
         </controllerFile>
+        <controllerFile controllerName="Twitter">
+          <actionMethod actionName="index"/>
+          <actionMethod actionName="callback"/>
+        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Forgotpassword"/>
@@ -64,6 +68,12 @@
           <viewControllerScriptsDirectory forControllerName="Forgotpassword">
             <viewScriptFile forActionName="change"/>
           </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Twitter">
+            <viewScriptFile forActionName="index"/>
+          </viewControllerScriptsDirectory>
+          <viewControllerScriptsDirectory forControllerName="Twitter">
+            <viewScriptFile forActionName="callback"/>
+          </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
         <viewFiltersDirectory enabled="false"/>
@@ -100,6 +110,7 @@
         <testApplicationControllerDirectory>
           <testApplicationControllerFile filesystemName="RegisterControllerTest.php"/>
           <testApplicationControllerFile filesystemName="ForgotpasswordControllerTest.php"/>
+          <testApplicationControllerFile filesystemName="TwitterControllerTest.php"/>
         </testApplicationControllerDirectory>
       </testApplicationDirectory>
       <testLibraryDirectory>
